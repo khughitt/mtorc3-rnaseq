@@ -1,0 +1,5 @@
+python>=3.9
+r-base>=4.0
+subread>=2.0
+snakemake-minimal>=5.2
+hisat2>=2.2
