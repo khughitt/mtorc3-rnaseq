@@ -61,7 +61,7 @@ replicates = ['1', '2', '3', '4']
 #
 rule all:
     input:
-        expand(os.path.join(out_dir, 'hisat2', '{cell}_{nutrient}_{replicate}_all_trimmed.sam'),
+        expand(os.path.join(out_dir, 'hisat2', '{cell}_{nutrient}_{replicate}_all_trimmed.bam'),
                   cell=cell_lines, nutrient=nutrients, replicate=replicates)
 
 rule samtools_bam:
